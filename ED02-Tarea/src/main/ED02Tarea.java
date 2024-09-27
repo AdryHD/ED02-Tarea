@@ -5,35 +5,36 @@ public class ED02Tarea {
     
 public static void main(String[] args) {
     int numero = 852499;
-    System.out.print("Número invertido (recursivo): ");
-    invierte(numero);  // Llamada al método recursivo
-    System.out.println();  // Para nueva línea después del resultado 
-    invierteIterativo(numero);  // Llamada al método iterativo
+    System.out.print("Número invertido (metodo recursivo): ");
+    invertido(numero);  // Llama al met recursivo
+    System.out.println();  // nueva linea 
+    invierteIterativo(numero);  // Llama al met iterativo
 }
 
-    public static void invierte(int numero) {
-    // Condición de parada: si el número es menor a 10, se imprime tal cual
+    public static void invertido(int numero) {
+    // si el num es menor a 10 se imprime
     if (numero < 10) {
-        System.out.print(numero);  // Imprimir el último dígito
+        System.out.print(numero);  
+        
     } else {
-        // Imprimir el último dígito del número
+        // Imprimir ultimo numero
         System.out.print(numero % 10);
-        // Llamada recursiva con el número sin el último dígito
-        invierte(numero / 10);
+        // Llamada recursiva 
+        invertido(numero / 10);
     }
 }
 
-public static void invierteIterativo(int numeroiterativo) {
-    System.out.print("Número invertido (iterativo): ");
+public static void invierteIterativo(int numeroiterat) {
+    System.out.print("Número invertido (metodo iterativo): ");
     
-  // bucle mientras el número sea mayor a 0
-    while (numeroiterativo > 0) {
-        // Imprimir el último dígito del número
-        System.out.print(numeroiterativo % 10);
-        // Eliminar el último dígito del número
-        numeroiterativo = numeroiterativo / 10;
+  // bucle mientras el num sea mayor a 0
+    while (numeroiterat > 0) {
+        // Imprimir el último digiyo 
+        System.out.print(numeroiterat % 10);
+        // Elimina el último digiyo 
+        numeroiterat = numeroiterat / 10;
     }
-    System.out.println();  // Para nueva línea después del resultado
+    System.out.println();  // nueva linea
 }
 
 
