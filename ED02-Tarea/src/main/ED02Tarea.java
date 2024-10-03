@@ -4,7 +4,7 @@ public class ED02Tarea {
 
     
 public static void main(String[] args) {
-    int numero = 852499;
+    int numero = 123456;
     System.out.print("Número invertido (metodo recursivo): ");
     invertido(numero);  // Llama al met recursivo
     System.out.println();  // nueva linea 
@@ -48,12 +48,12 @@ public class Busqueda {
         this.v = v;
     }
 
-    // Método público que inicia la búsqueda
+    // Met pub que inicia la busqueda
     public int busca(int x) {
         return buscaR(x, 0, v.length - 1);  // Llamada al método recursivo
     }
 
-    // Método privado que realiza la búsqueda recursiva
+    // Met privado que realiza la busquda recursiva
     private int buscaR(int x, int izquierda, int derecha) {
         if (izquierda > derecha) {
             return -1;  // Valor no encontrado
