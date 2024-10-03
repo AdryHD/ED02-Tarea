@@ -11,6 +11,8 @@ public static void main(String[] args) {
     invierteIterativo(numero);  // Llama al met iterativo
 }
 
+//Linea Prueba
+
     public static void invertido(int numero) {
     // si el num es menor a 10 se imprime
     if (numero < 10) {
